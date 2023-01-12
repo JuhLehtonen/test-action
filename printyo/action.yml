@@ -1,6 +1,6 @@
 name: "Print yo"
 description: "This action only prints yo"
-author: 'JuhLehtonen'
+author: "JuhLehtonen"
 
 runs:
   using: 'composite'
