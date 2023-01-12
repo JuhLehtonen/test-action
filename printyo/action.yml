@@ -6,6 +6,5 @@ runs:
   using: 'composite'
   steps:
     - name: print yo
-      id: print yo
       shell: bash
       run: echo 'yo'
