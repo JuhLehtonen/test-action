@@ -6,11 +6,11 @@ on: [push, pull_request]
 
 jobs:
   run-action:
-  name: print yo
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v1
+    name: print yo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
 
-    - name: print yo
-      uses: ./printyo
+      - name: print yo
+        uses: ./printyo
