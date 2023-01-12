@@ -1,0 +1,10 @@
+name: "Print kek"
+description: "This action only prints kek"
+author: "JuhLehtonen"
+
+runs:
+  using: 'composite'
+  steps:
+    - name: print kek
+      shell: bash
+      run: echo 'kek'
