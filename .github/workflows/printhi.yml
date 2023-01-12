@@ -2,6 +2,8 @@ name: "Print hi"
 description: "This action only prints hi"
 author: 'JuhLehtonen'
 
+on: [push, pull_request]
+
 jobs:
   run-action:
   name: print hi
