@@ -1,0 +1,13 @@
+name: "Print hi"
+description: "This action only prints hi"
+author: 'JuhLehtonen'
+
+jobs:
+  run-action:
+  name: print hi
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: print hi
+      uses: ./printhi

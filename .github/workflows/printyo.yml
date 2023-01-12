@@ -1,0 +1,13 @@
+name: "Print yo"
+description: "This action only prints yo"
+author: 'JuhLehtonen'
+
+jobs:
+  run-action:
+  name: print yo
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: print yo
+      uses: ./printyo
