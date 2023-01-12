@@ -1,0 +1,11 @@
+name: "Print yo"
+description: "This action only prints hi"
+author: 'JuhLehtonen'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: print hi
+      id: print hi
+      shell: bash
+      run: echo 'hi'
