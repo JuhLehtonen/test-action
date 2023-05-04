@@ -1,0 +1,19 @@
+name: test multiple actions from same repo
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  test-stuff:
+    runs-on: ubuntu-latest
+    environment: test
+    steps:
+      - name: print hi
+        uses: JuhLehtonen/test-action/printhi@main
+      - name: print yo
+        uses: JuhLehtonen/test-action/printyo@main
+      - name: print kek
+        uses: JuhLehtonen/test-action/actions/printkek@main
