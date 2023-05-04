@@ -5,7 +5,7 @@ on:
   workflow_call:
 
 jobs:
-  test-stuff:
+  deploy-with-black-magic:
     runs-on: ubuntu-latest
     environment: test
     steps:
