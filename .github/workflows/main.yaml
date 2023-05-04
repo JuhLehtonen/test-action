@@ -4,9 +4,13 @@ on:
       - "main"
     
 jobs:
-  first_job:
+  deploy_test:
     uses: ./.github/workflows/test-hop.yaml
 
-  second_job:
-    needs: first_job
+  deploy_staging:
+    needs: deploy_test
+    uses: ./.github/workflows/test-hop.yaml
+
+  deploy_prod:
+    needs: deploy_staging
     uses: ./.github/workflows/environments-test.yaml
