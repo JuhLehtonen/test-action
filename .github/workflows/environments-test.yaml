@@ -7,7 +7,6 @@ on:
 jobs:
   deploy-with-black-magic:
     runs-on: ubuntu-latest
-    environment: test
     steps:
       - name: print yo
         uses: JuhLehtonen/test-action/printyo@main

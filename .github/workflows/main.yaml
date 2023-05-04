@@ -13,4 +13,5 @@ jobs:
 
   deploy_prod:
     needs: deploy_staging
+    environment: test
     uses: ./.github/workflows/environments-test.yaml
