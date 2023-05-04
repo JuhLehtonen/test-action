@@ -8,4 +8,5 @@ jobs:
     uses: ./.github/workflows/test-hop.yaml
 
   second_job:
+    needs: first_job
     uses: ./.github/workflows/environments-test.yaml
