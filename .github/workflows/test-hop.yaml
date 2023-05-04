@@ -4,3 +4,6 @@ on:
 jobs:
   test-stuff:
     runs-on: ubuntu-latest
+    steps:
+      - name: print yo
+        uses: JuhLehtonen/test-action/printyo@main
