@@ -1,0 +1,11 @@
+on:
+  push:
+    branches:
+      - "main"
+    
+jobs:
+  first_job:
+    uses: ./.github/workflows/test-hop.yaml
+
+  second_job:
+    uses: ./.github/workflows/environments-test.yaml
