@@ -4,6 +4,9 @@ on:
       - "main"
     
 jobs:
+  fromJsonTest:
+    uses: ./.github/workflows/fromJson.yaml
+    
   deploy_test:
     uses: ./.github/workflows/test-hop.yaml
 

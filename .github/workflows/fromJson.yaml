@@ -1,0 +1,25 @@
+on:
+  workflow_call:
+      
+jobs:
+  deploy-with-regular-magic:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: test1
+        id: test1
+        run: echo 'result=PASS' >> $GITHUB_OUTPUT
+
+      - name: test1 
+        id: test2
+        run: echo 'result=FAIL' >> $GITHUB_OUTPUT 
+
+      - name: test true
+        shell: bash
+        run: |
+          echo ${{fromJson('{"PASS":"true", "FAIL":"false"}')[steps.test1.outputs.result]}}
+
+      - name: test fail
+        shell: bash
+        run: |
+          echo ${{fromJson('{"PASS":"true", "FAIL":"false"}')[steps.test2.outputs.result]}}
