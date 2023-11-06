@@ -17,9 +17,13 @@ jobs:
       - name: test true
         shell: bash
         run: |
-          echo ${{fromJson('{"PASS":"true", "FAIL":"false"}')[steps.test1.outputs.result]}}
+          echo ${{fromJson('{"PASS":"true", "FAIL":"false"}')[env.output]}}
+        env:
+          output: ${{ steps.test1.outputs.result }}
 
       - name: test fail
         shell: bash
         run: |
-          echo ${{fromJson('{"PASS":"true", "FAIL":"false"}')[steps.test2.outputs.result]}}
+          echo ${{fromJson('{"PASS":"true", "FAIL":"false"}')[env.output]}} 
+        env:
+          output: ${{ steps.test2.outputs.result }}
