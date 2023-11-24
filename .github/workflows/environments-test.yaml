@@ -17,6 +17,7 @@ jobs:
       - name: debug
         run: |
           PROJECT_HOSTNAME=${{fromJson('{"kehitys":"dev", "ennen":"stg", "tuotanto":"prod"}')[inputs.ENVIRONMENT]}}
+          echo $PROJECT_HOSTNAME
 
       - name: print yo
         uses: JuhLehtonen/test-action/printyo@main
