@@ -2,6 +2,11 @@ name: test multiple actions from same repo
 
 on:
   workflow_dispatch:
+    inputs:
+      environment:
+        type: string
+        description: wahuu
+
   workflow_call:
 
 jobs:
@@ -9,9 +14,14 @@ jobs:
     runs-on: ubuntu-latest
     environment: test
     steps:
+      - name: debug
+        run: |
+          PROJECT_HOSTNAME=${{fromJson('{"kehitys":"dev", "ennen":"stg", "tuotanto":"prod"}')[inputs.ENVIRONMENT]}}
+
       - name: print yo
         uses: JuhLehtonen/test-action/printyo@main
       - name: print kek
         uses: JuhLehtonen/test-action/actions/printkek@main
 
+      
         
