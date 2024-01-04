@@ -2,9 +2,6 @@ name: "TEST BUILD PUSH"
 
 on:
     push:
-        branches:
-            - main
-    pull_request:
 
 jobs:
     test_triggers:
