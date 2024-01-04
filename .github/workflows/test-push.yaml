@@ -1,0 +1,14 @@
+name: "TEST BUILD PUSH"
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    test_triggers:
+        name: "test trigger"
+        runs-on: ubuntu-latest
+        steps:
+            - name: test trigger
+              run: echo "wahhoo"
