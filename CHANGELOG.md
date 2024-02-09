@@ -1,3 +1,11 @@
+# [2.0.0](https://github.com/JuhLehtonen/test-action/compare/v1.0.0...v2.0.0) (2024-02-09)
+
+
+### Features
+
+* non breaking ([9d47b67](https://github.com/JuhLehtonen/test-action/commit/9d47b675bfef554faf4123d5976fa2f7e8330776))
+* wow ([e0df8bf](https://github.com/JuhLehtonen/test-action/commit/e0df8bfd436a52fdb5017380dd257057f86aaa82))
+
 # [1.0.0](https://github.com/JuhLehtonen/test-action/compare/...v1.0.0) (2024-02-08)
 
 
